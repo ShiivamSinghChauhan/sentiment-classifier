@@ -5,11 +5,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-@lru_cache(maxsize=1)
-def load_llm():
+@lru_cache
+def load_llm(temperature):
     llm = ChatGroq(
         model='openai/gpt-oss-20b',
-        temperature=0,
+        temperature=temperature,
         max_retries=3,
         timeout=30,
     )
