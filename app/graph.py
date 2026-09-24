@@ -90,6 +90,18 @@ Fix the output and return ONLY valid JSON."""
     chain = retry_prompt_template | llm
 
     return chain
+
+def _fallback(feedback: str, reason: str) -> dict:
+    """A clearly-flagged record used when the LLM output can't be trusted."""
+    return {
+        "sentiment": "neutral",
+        "confidence": 0.0,
+        "category": "general",
+        "urgency": "low",
+        "summary": feedback[:120],
+        "action_items": "Review manually",
+        "error": reason,
+    }
 # ======================================= graph ===========================================
 class ClassifyState(TypedDict):
 
