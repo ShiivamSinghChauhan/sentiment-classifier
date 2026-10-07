@@ -1,0 +1,17 @@
+[project]
+name = "sentiment-classifier"
+version = "0.1.0"
+description = "Customer feedback labels (sentiment, category, urgency) from Jev, with an LLM second opinion when unsure"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.162.2",
+    "langchain-core>=1.7.7",
+    "langchain-groq>=1.1.3",
+    "langgraph>=1.2.20",
+    "pandas>=3.1.1",
+    "python-dotenv>=1.2.4",
+    "python-multipart>=0.0.33",
+    "streamlit>=1.67.0",
+    "typesafe-sdk>=0.7.5",
+    "uvicorn>=0.54.0",
+]
