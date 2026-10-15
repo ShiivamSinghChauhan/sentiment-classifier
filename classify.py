@@ -1,19 +1,24 @@
-"""Label customer feedback with sentiment, category and urgency.
+"""Label customer feedback with sentiment, category and urgency, and write a summary
+and action items for the feedback that needs a response.
 
 Jev answers all three labels as Choice questions in one request and returns a
 probability for every label. When a field's top probability is below SURE, an LLM
-gives a second opinion on that field, so the LLM only sees the hard cases.
+gives a second opinion on that field, so the LLM only sees the hard cases. Praise
+and neutral low-urgency comments need no action, so they skip the summary step.
 
-    jev --(unsure)--> review --> END
-     +--(sure)----------------> END
+    jev --(unsure)--> review --+
+     |                         v
+     +--(needs action)----> summarize --> END
+     +--(nothing to do)------------------> END
 """
 
 from typing import Literal, TypedDict
 
 from dotenv import load_dotenv
+from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
 from langgraph.graph import END, START, StateGraph
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typesafe_sdk import Choice, TypeSafeClient
 
 load_dotenv()
@@ -94,11 +99,24 @@ Feedback: {{text}}"""
 second_opinion = llm.with_structured_output(Labels, method="json_schema", strict=True).with_retry(stop_after_attempt=3)
 
 
+class Summary(BaseModel):
+    summary: str = Field(description="what the customer says, in at most 20 words")
+    action_items: list[str] = Field(description="1 to 3 concrete next steps for the company, most urgent first")
+
+
+summarizer = ChatPromptTemplate.from_template(
+    "Customer feedback for an online store, labelled {sentiment} / {category} / {urgency} urgency:\n"
+    "{text}\n\nSummarize it and list what the company should do next. Use only what the feedback says."
+) | llm.with_structured_output(Summary, method="json_schema", strict=True).with_retry(stop_after_attempt=3)
+
+
 class State(TypedDict, total=False):
     text: str
     labels: dict  # field -> label
     confidence: dict  # field -> Jev's probability for the chosen label
     reviewed_by_llm: bool
+    summary: str
+    action_items: list[str]
     jev_tokens: int
 
 
@@ -116,19 +134,34 @@ def label_with_llm(state: State) -> dict:
     return {"labels": state["labels"] | {field: llm_labels[field] for field in unsure}, "reviewed_by_llm": True}
 
 
+def summarize(state: State) -> dict:
+    result = summarizer.invoke({"text": state["text"], **state["labels"]})
+    return {"summary": result.summary, "action_items": result.action_items[:3]}
+
+
+def needs_action(state: State) -> bool:
+    return state["labels"]["sentiment"] == "negative" or state["labels"]["urgency"] != "low"
+
+
 def after_jev(state: State) -> str:
     if min(state["confidence"].values()) < SURE:
         return "review"
-    return END
+    return "summarize" if needs_action(state) else END
+
+
+def after_review(state: State) -> str:
+    return "summarize" if needs_action(state) else END
 
 
 graph = (
     StateGraph(State)
     .add_node("jev", label_with_jev)
     .add_node("review", label_with_llm)
+    .add_node("summarize", summarize)
     .add_edge(START, "jev")
-    .add_conditional_edges("jev", after_jev, ["review", END])
-    .add_edge("review", END)
+    .add_conditional_edges("jev", after_jev, ["review", "summarize", END])
+    .add_conditional_edges("review", after_review, ["summarize", END])
+    .add_edge("summarize", END)
     .compile()
 )
 
@@ -136,7 +169,8 @@ graph = (
 def classify(text: str) -> dict:
     state = graph.invoke({"text": text})
     return {"text": text, **state["labels"], "confidence": state["confidence"],
-            "reviewed_by_llm": state["reviewed_by_llm"]}
+            "reviewed_by_llm": state["reviewed_by_llm"],
+            "summary": state.get("summary", ""), "action_items": state.get("action_items", [])}
 
 
 if __name__ == "__main__":
