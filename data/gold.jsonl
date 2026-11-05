@@ -1,0 +1,132 @@
+{"text": "My package arrived crushed and the box was ripped open. The lamp inside is broken.", "sentiment": "negative", "category": "delivery", "urgency": "high"}
+{"text": "I ordered a blue kettle and received a red toaster instead.", "sentiment": "negative", "category": "delivery", "urgency": "high"}
+{"text": "Tracking has said 'out for delivery' for four days now. Where is my order?", "sentiment": "negative", "category": "delivery", "urgency": "medium"}
+{"text": "Delivery was two days later than promised, a bit annoying but the item is fine.", "sentiment": "negative", "category": "delivery", "urgency": "medium"}
+{"text": "Arrived a day early and the packaging was neat. Great job!", "sentiment": "positive", "category": "delivery", "urgency": "low"}
+{"text": "The courier left my parcel in the rain and the shoes inside are ruined.", "sentiment": "negative", "category": "delivery", "urgency": "high"}
+{"text": "Half of my order is missing. I paid for three items and got one.", "sentiment": "negative", "category": "delivery", "urgency": "high"}
+{"text": "Can I change the delivery address after I've placed my order?", "sentiment": "neutral", "category": "delivery", "urgency": "low"}
+{"text": "Shipping was fast as always, thanks.", "sentiment": "positive", "category": "delivery", "urgency": "low"}
+{"text": "The box was three times bigger than the item, so much plastic filler. Please use smaller packaging.", "sentiment": "negative", "category": "delivery", "urgency": "low"}
+{"text": "My order shows delivered but nothing was at my door and the neighbours haven't seen it.", "sentiment": "negative", "category": "delivery", "urgency": "high"}
+{"text": "The delivery window was 8am to 8pm, which made me wait home all day. Not great.", "sentiment": "negative", "category": "delivery", "urgency": "medium"}
+{"text": "The courier was polite and even carried the heavy box upstairs.", "sentiment": "positive", "category": "delivery", "urgency": "low"}
+{"text": "Expected delivery is shown as next Tuesday. Just confirming that is still correct.", "sentiment": "neutral", "category": "delivery", "urgency": "low"}
+{"text": "Third time this month the parcel arrived late. Your delivery partner is unreliable.", "sentiment": "negative", "category": "delivery", "urgency": "medium"}
+{"text": "The glass vase arrived shattered. Second time this happened.", "sentiment": "negative", "category": "delivery", "urgency": "high"}
+{"text": "The app crashes every time I try to upload a photo.", "sentiment": "negative", "category": "bug_report", "urgency": "medium"}
+{"text": "I can't log in at all since this morning, the site just shows error 500.", "sentiment": "negative", "category": "bug_report", "urgency": "high"}
+{"text": "Checkout fails with 'payment declined' on every card, so I can't buy anything.", "sentiment": "negative", "category": "bug_report", "urgency": "high"}
+{"text": "The dashboard freezes constantly and sometimes shows last week's numbers.", "sentiment": "negative", "category": "bug_report", "urgency": "medium"}
+{"text": "Search results take about 10 seconds to load on my phone.", "sentiment": "negative", "category": "bug_report", "urgency": "medium"}
+{"text": "All my saved wishlists disappeared after the update. Years of lists, gone.", "sentiment": "negative", "category": "bug_report", "urgency": "high"}
+{"text": "I could see another customer's name and address on my order page. That's a serious privacy problem.", "sentiment": "negative", "category": "bug_report", "urgency": "high"}
+{"text": "The price filter ignores the maximum value I type in.", "sentiment": "negative", "category": "bug_report", "urgency": "medium"}
+{"text": "Small thing: the 'Continue' button text overlaps the icon on Android.", "sentiment": "neutral", "category": "bug_report", "urgency": "low"}
+{"text": "The order confirmation email shows the wrong product photo, though the order itself is right.", "sentiment": "neutral", "category": "bug_report", "urgency": "low"}
+{"text": "Notifications arrive twice for every message.", "sentiment": "negative", "category": "bug_report", "urgency": "medium"}
+{"text": "The website has been down for an hour and I can't place my order.", "sentiment": "negative", "category": "bug_report", "urgency": "high"}
+{"text": "Since the latest update the app logs me out every few minutes.", "sentiment": "negative", "category": "bug_report", "urgency": "medium"}
+{"text": "The size chart page returns a 404.", "sentiment": "negative", "category": "bug_report", "urgency": "medium"}
+{"text": "Dark mode makes some prices invisible, black text on black background.", "sentiment": "negative", "category": "bug_report", "urgency": "medium"}
+{"text": "I can never remember where the settings live; the menus are a maze.", "sentiment": "negative", "category": "usability", "urgency": "medium"}
+{"text": "It takes seven taps to reorder something I buy every month.", "sentiment": "negative", "category": "usability", "urgency": "medium"}
+{"text": "The new layout is so clean and easy to navigate. Love it!", "sentiment": "positive", "category": "usability", "urgency": "low"}
+{"text": "I didn't realise the grey text was a button, it took me ages to find how to return my item.", "sentiment": "negative", "category": "usability", "urgency": "medium"}
+{"text": "The font on the product pages is tiny, hard to read for older customers like me.", "sentiment": "negative", "category": "usability", "urgency": "medium"}
+{"text": "Checkout is quick and simple, only two steps. Nice.", "sentiment": "positive", "category": "usability", "urgency": "low"}
+{"text": "Where in the app do I change my default shipping address?", "sentiment": "neutral", "category": "usability", "urgency": "low"}
+{"text": "The filters reset every time I go back to the results page, so I have to set them again and again.", "sentiment": "negative", "category": "usability", "urgency": "medium"}
+{"text": "Too many pop-ups asking me to sign up for the newsletter while I'm browsing.", "sentiment": "negative", "category": "usability", "urgency": "low"}
+{"text": "The icons have no labels, I have to guess what each one does.", "sentiment": "negative", "category": "usability", "urgency": "medium"}
+{"text": "Finding my past orders is easy now that they're on the home screen.", "sentiment": "positive", "category": "usability", "urgency": "low"}
+{"text": "The return form asks for the same information three times.", "sentiment": "negative", "category": "usability", "urgency": "medium"}
+{"text": "The colour swatches are so small that I tap the wrong colour half the time.", "sentiment": "negative", "category": "usability", "urgency": "medium"}
+{"text": "Please add an option to pay with Apple Pay.", "sentiment": "neutral", "category": "feature_request", "urgency": "low"}
+{"text": "It would be great to have a price drop alert for items on my wishlist.", "sentiment": "neutral", "category": "feature_request", "urgency": "low"}
+{"text": "Could you let us schedule deliveries for a specific day?", "sentiment": "neutral", "category": "feature_request", "urgency": "low"}
+{"text": "A dark mode for browsing at night would be nice.", "sentiment": "neutral", "category": "feature_request", "urgency": "low"}
+{"text": "Please raise the limit of 10 items per order, I buy supplies for my office.", "sentiment": "neutral", "category": "feature_request", "urgency": "low"}
+{"text": "Why is there still no way to export my order history to a spreadsheet? Every other shop has this.", "sentiment": "negative", "category": "feature_request", "urgency": "medium"}
+{"text": "A family account where my partner and I share one cart would be lovely.", "sentiment": "neutral", "category": "feature_request", "urgency": "low"}
+{"text": "Add a gift wrapping option at checkout, please!", "sentiment": "neutral", "category": "feature_request", "urgency": "low"}
+{"text": "We need two-factor login. Without it our company can't approve your shop for purchasing.", "sentiment": "negative", "category": "feature_request", "urgency": "high"}
+{"text": "Can you add size filters for kids' clothes? Right now I scroll through everything.", "sentiment": "neutral", "category": "feature_request", "urgency": "low"}
+{"text": "Love the app! One suggestion: let me save several delivery addresses.", "sentiment": "positive", "category": "feature_request", "urgency": "low"}
+{"text": "I've asked three times for invoices with my company's tax number. Still not possible, so I'm moving our account elsewhere.", "sentiment": "negative", "category": "feature_request", "urgency": "high"}
+{"text": "A chat option in Spanish would help my parents a lot.", "sentiment": "neutral", "category": "feature_request", "urgency": "low"}
+{"text": "I was charged twice for the same order.", "sentiment": "negative", "category": "pricing", "urgency": "high"}
+{"text": "Way too expensive for what you get. The same blender costs less in supermarkets.", "sentiment": "negative", "category": "pricing", "urgency": "medium"}
+{"text": "Great value for money, cheaper than I expected for this quality.", "sentiment": "positive", "category": "pricing", "urgency": "low"}
+{"text": "My refund was approved two weeks ago and I still haven't received the money.", "sentiment": "negative", "category": "pricing", "urgency": "high"}
+{"text": "The shipping fee jumped from 5 to 12 dollars without any notice.", "sentiment": "negative", "category": "pricing", "urgency": "medium"}
+{"text": "Is the price shown including tax?", "sentiment": "neutral", "category": "pricing", "urgency": "low"}
+{"text": "My subscription renewed even though I cancelled it last month. Please refund it.", "sentiment": "negative", "category": "pricing", "urgency": "high"}
+{"text": "The student discount saves me a lot every semester, thank you!", "sentiment": "positive", "category": "pricing", "urgency": "low"}
+{"text": "Prices went up 20% this month. If this continues I'll cancel my membership.", "sentiment": "negative", "category": "pricing", "urgency": "high"}
+{"text": "I was charged a cancellation fee nobody told me about.", "sentiment": "negative", "category": "pricing", "urgency": "high"}
+{"text": "Do you offer installment payments for orders above 500 dollars?", "sentiment": "neutral", "category": "pricing", "urgency": "low"}
+{"text": "The membership is a bit pricey, but the free shipping makes up for it.", "sentiment": "positive", "category": "pricing", "urgency": "low"}
+{"text": "Your support team was incredibly helpful and patient.", "sentiment": "positive", "category": "customer_service", "urgency": "low"}
+{"text": "I've emailed support four times in two weeks and nobody has replied.", "sentiment": "negative", "category": "customer_service", "urgency": "high"}
+{"text": "The agent on chat was rude and ended the conversation while I was typing.", "sentiment": "negative", "category": "customer_service", "urgency": "medium"}
+{"text": "I waited 45 minutes on the phone before someone picked up.", "sentiment": "negative", "category": "customer_service", "urgency": "medium"}
+{"text": "Maria from the help desk solved my problem in five minutes. Please thank her!", "sentiment": "positive", "category": "customer_service", "urgency": "low"}
+{"text": "Every agent tells me something different about my return. Who is right?", "sentiment": "negative", "category": "customer_service", "urgency": "medium"}
+{"text": "The chatbot keeps looping and never connects me to a human.", "sentiment": "negative", "category": "customer_service", "urgency": "medium"}
+{"text": "Support promised a callback yesterday and never called. I'm done with this shop.", "sentiment": "negative", "category": "customer_service", "urgency": "high"}
+{"text": "What are your customer service hours on weekends?", "sentiment": "neutral", "category": "customer_service", "urgency": "low"}
+{"text": "Quick and friendly reply to my question about sizes, thanks.", "sentiment": "positive", "category": "customer_service", "urgency": "low"}
+{"text": "The support person didn't read my message and sent a copy-paste answer.", "sentiment": "negative", "category": "customer_service", "urgency": "medium"}
+{"text": "Your agent handled my complaint professionally and sent a replacement the same day.", "sentiment": "positive", "category": "customer_service", "urgency": "low"}
+{"text": "My ticket was closed without any answer. This is the third ticket ignored.", "sentiment": "negative", "category": "customer_service", "urgency": "high"}
+{"text": "The product quality is amazing! Best purchase I've made this year.", "sentiment": "positive", "category": "product_quality", "urgency": "low"}
+{"text": "The jacket's zipper broke after two weeks of normal use.", "sentiment": "negative", "category": "product_quality", "urgency": "medium"}
+{"text": "These headphones sound fantastic and the battery lasts for days.", "sentiment": "positive", "category": "product_quality", "urgency": "low"}
+{"text": "The T-shirt shrank two sizes after the first wash.", "sentiment": "negative", "category": "product_quality", "urgency": "medium"}
+{"text": "The phone charger gets dangerously hot and smells like burning plastic.", "sentiment": "negative", "category": "product_quality", "urgency": "high"}
+{"text": "The vacuum is okay. It cleans well enough, nothing special.", "sentiment": "neutral", "category": "product_quality", "urgency": "low"}
+{"text": "The colour of the sofa is lighter than in the photos, but the quality is fine.", "sentiment": "neutral", "category": "product_quality", "urgency": "low"}
+{"text": "The face cream gave me a rash and burning skin.", "sentiment": "negative", "category": "product_quality", "urgency": "high"}
+{"text": "The kitchen knives are still razor sharp after a year. Excellent.", "sentiment": "positive", "category": "product_quality", "urgency": "low"}
+{"text": "The chair wobbles even though every screw is tight.", "sentiment": "negative", "category": "product_quality", "urgency": "medium"}
+{"text": "The smartwatch step counter is way off, it counts steps while I sit.", "sentiment": "negative", "category": "product_quality", "urgency": "medium"}
+{"text": "The child's toy has small parts that came loose within an hour. That's a choking hazard.", "sentiment": "negative", "category": "product_quality", "urgency": "high"}
+{"text": "Fabric feels cheap and the stitching is already coming apart.", "sentiment": "negative", "category": "product_quality", "urgency": "medium"}
+{"text": "The blender works as described.", "sentiment": "neutral", "category": "product_quality", "urgency": "low"}
+{"text": "Lovely shop, I recommend you to all my friends!", "sentiment": "positive", "category": "general", "urgency": "low"}
+{"text": "Do you have a physical store in Chicago?", "sentiment": "neutral", "category": "general", "urgency": "low"}
+{"text": "I'm a regular customer for five years and I'm always happy.", "sentiment": "positive", "category": "general", "urgency": "low"}
+{"text": "Are you hiring for the warehouse in Denver?", "sentiment": "neutral", "category": "general", "urgency": "low"}
+{"text": "Please stop sending me so many marketing emails.", "sentiment": "negative", "category": "general", "urgency": "low"}
+{"text": "Happy holidays to the whole team!", "sentiment": "positive", "category": "general", "urgency": "low"}
+{"text": "Is ShopKart an American company?", "sentiment": "neutral", "category": "general", "urgency": "low"}
+{"text": "I don't like the new logo, the old one was better.", "sentiment": "negative", "category": "general", "urgency": "low"}
+{"text": "Please delete my account and all my personal data as required by GDPR.", "sentiment": "neutral", "category": "general", "urgency": "high"}
+{"text": "Thanks for supporting the local food bank this year.", "sentiment": "positive", "category": "general", "urgency": "low"}
+{"text": "I found your shop through an Instagram ad.", "sentiment": "neutral", "category": "general", "urgency": "low"}
+{"text": "Someone used my account to place orders I never made. Please lock it now!", "sentiment": "negative", "category": "general", "urgency": "high"}
+{"text": "The scarf is beautiful but it came two weeks late.", "sentiment": "negative", "category": "delivery", "urgency": "medium"}
+{"text": "Good product, terrible support: nobody answered my warranty question for a month.", "sentiment": "negative", "category": "customer_service", "urgency": "high"}
+{"text": "The app is beautiful, but it crashes when I open my cart, so I can't check out.", "sentiment": "negative", "category": "bug_report", "urgency": "high"}
+{"text": "Cheap price but the speaker broke within a week.", "sentiment": "negative", "category": "product_quality", "urgency": "medium"}
+{"text": "Love the shop, but please add PayPal, I don't like typing my card number.", "sentiment": "positive", "category": "feature_request", "urgency": "low"}
+{"text": "Honestly the best customer service I've had from any online store.", "sentiment": "positive", "category": "customer_service", "urgency": "low"}
+{"text": "The coffee machine leaks water all over the counter every time I use it.", "sentiment": "negative", "category": "product_quality", "urgency": "medium"}
+{"text": "Your site keeps showing items as in stock, then cancels my order a day later.", "sentiment": "negative", "category": "bug_report", "urgency": "medium"}
+{"text": "Delivered on time, well packed, and the driver called ahead. Perfect.", "sentiment": "positive", "category": "delivery", "urgency": "low"}
+{"text": "Thinking about switching to another shop: three late deliveries in a row and no apology.", "sentiment": "negative", "category": "delivery", "urgency": "high"}
+{"text": "The instructions for assembling the desk are confusing and the pictures don't match the parts.", "sentiment": "negative", "category": "product_quality", "urgency": "medium"}
+{"text": "Why do I have to create an account just to check out? Guest checkout please.", "sentiment": "negative", "category": "feature_request", "urgency": "medium"}
+{"text": "The new menu makes it really easy to find what I need.", "sentiment": "positive", "category": "usability", "urgency": "low"}
+{"text": "Got a receipt for 89 dollars but my bank shows 98 dollars.", "sentiment": "negative", "category": "pricing", "urgency": "high"}
+{"text": "Someone from support called me back within an hour as promised. Impressive.", "sentiment": "positive", "category": "customer_service", "urgency": "low"}
+{"text": "The password reset link expires before the email even arrives, so I'm locked out.", "sentiment": "negative", "category": "bug_report", "urgency": "high"}
+{"text": "The rug looks exactly like the photo and feels soft. Very happy.", "sentiment": "positive", "category": "product_quality", "urgency": "low"}
+{"text": "Could you offer refills for the cleaning spray to reduce plastic?", "sentiment": "neutral", "category": "feature_request", "urgency": "low"}
+{"text": "The returns page is hidden at the bottom of the FAQ, it should be in the main menu.", "sentiment": "negative", "category": "usability", "urgency": "medium"}
+{"text": "My order was supposed to arrive before my daughter's birthday and it didn't. She had no present.", "sentiment": "negative", "category": "delivery", "urgency": "medium"}
+{"text": "Paid, got a confirmation, but the order doesn't show up in my account and no email arrived.", "sentiment": "negative", "category": "bug_report", "urgency": "high"}
+{"text": "Prices are fair and you often have good sales.", "sentiment": "positive", "category": "pricing", "urgency": "low"}
+{"text": "I would like to know if you plan to sell furniture in the future.", "sentiment": "neutral", "category": "general", "urgency": "low"}
+{"text": "Your hold music is unbearable, please change it.", "sentiment": "negative", "category": "customer_service", "urgency": "low"}
