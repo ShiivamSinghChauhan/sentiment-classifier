@@ -1,0 +1,59 @@
+{
+  "items": 132,
+  "jev_only": {
+    "sentiment": 0.962,
+    "category": 0.97,
+    "urgency": 0.985,
+    "all_three": 0.917,
+    "cost_per_1k_usd": 0.0388,
+    "latency_ms_mean": 395
+  },
+  "llm_only": {
+    "sentiment": 0.848,
+    "category": 0.924,
+    "urgency": 0.795,
+    "all_three": 0.667,
+    "cost_per_1k_usd": 0.0703,
+    "latency_ms_mean": 2738
+  },
+  "cascade_sure_0.5": {
+    "sentiment": 0.955,
+    "category": 0.97,
+    "urgency": 0.985,
+    "all_three": 0.909,
+    "sent_to_llm": 0.015,
+    "cost_per_1k_usd": 0.0399
+  },
+  "cascade_sure_0.6": {
+    "sentiment": 0.962,
+    "category": 0.977,
+    "urgency": 0.985,
+    "all_three": 0.924,
+    "sent_to_llm": 0.076,
+    "cost_per_1k_usd": 0.0442
+  },
+  "cascade_sure_0.7": {
+    "sentiment": 0.97,
+    "category": 0.992,
+    "urgency": 0.947,
+    "all_three": 0.909,
+    "sent_to_llm": 0.205,
+    "cost_per_1k_usd": 0.0532
+  },
+  "cascade_sure_0.8": {
+    "sentiment": 0.97,
+    "category": 0.985,
+    "urgency": 0.924,
+    "all_three": 0.879,
+    "sent_to_llm": 0.288,
+    "cost_per_1k_usd": 0.0591
+  },
+  "cascade_sure_0.9": {
+    "sentiment": 0.97,
+    "category": 0.985,
+    "urgency": 0.894,
+    "all_three": 0.848,
+    "sent_to_llm": 0.386,
+    "cost_per_1k_usd": 0.066
+  }
+}
