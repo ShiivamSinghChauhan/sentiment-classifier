@@ -1,11 +1,14 @@
 """HTTP API.  Run: uvicorn main:app --reload  (docs at /docs)"""
 
 import io
+import json
 
 import pandas as pd
 from fastapi import FastAPI, HTTPException, UploadFile
+from fastapi.responses import Response
 from pydantic import BaseModel, Field
 
+import insights
 import store
 
 app = FastAPI(title="Customer Feedback Classifier")
@@ -33,3 +36,23 @@ async def classify_csv(file: UploadFile) -> dict:
 @app.get("/stats")
 def get_stats() -> dict:
     return store.stats()
+
+
+@app.get("/priorities")
+def get_priorities() -> list[dict]:
+    """Categories ranked by priority, with counts, trend, an example and the top action items."""
+    return json.loads(insights.priorities().to_json(orient="records"))
+
+
+@app.get("/priorities.csv")
+def get_priorities_csv() -> Response:
+    table = insights.priorities()
+    if not table.empty:
+        table["top_actions"] = table["top_actions"].str.join("; ")
+    return Response(table.to_csv(index=False), media_type="text/csv",
+                    headers={"Content-Disposition": "attachment; filename=priorities.csv"})
+
+
+@app.get("/insights")
+def get_insights() -> dict:
+    return insights.report()
